@@ -1,0 +1,245 @@
+D1よりD2の方がスパイクが大きいから投薬量多そう
+スパイクしていたらだいたいどっかしらのmoaに引っかかってる
+
+DAEの次元は1500が良かった(1500付近で調整かな)
+nfkb_inhibitor : proteasome_inhibitorはだいたいの細胞を殺しがち
+列落とすのそこまで意味ないかもしれない
+
+後処理
+特定のMoAはCELLの平均がかなり低い傾向にある(全ての細胞を破壊する傾向)
+nfkb_inhibitor : proteasome_inhibitor
+apoptosis_stimulant : bcl_inhibitor : ikk_inhibitor : nfkb_inhibitor : nitric_oxide_production_inhibitor : nrf2_activator : ppar_receptor_agonist
+
+
+
+
+実験のsetting は6種類あるが、そこまで分けると少ない奴がわからなくなる
+データ数少ない
+
+殺されない細胞は時間経つと増殖してる
+一般的に、投薬から時間がたつほど細胞が死滅する傾向にある
+
+最近傍ほとんど一致しない
+
+要素数が多いMoaは多分当てられる
+trainで最近傍上位nこ(3~5)が全て自身と同じクラスを認識したパターンをプロトタイプとし、それらが近傍と認めた(ここは考える)testパターンは強制的にプロトタイプのクラスにする
+moaによって異なるアプローチを取る
+
+近傍の特徴を入れる
+
+流石に全部0とするよりは改善されてる
+
+ログロスの悪いものに対する効果的な特徴を作る
+→だいたいがCELLの情報では見極めがつかない
+→CELLのスパイクが意味をなさないものが精度悪そう
+→GENES内での掛け算が大事そう?
+
+cyclooxygenase_inhibitor : lipoxygenase_inhibitor : nfkb_inhibitorが悪い
+
+
+atp-sensitive_potassium_channel_antagonist,           ,             0.0009069706869104248
+erbb2_inhibitor,           ,             0.0009285555436399392
+bacterial_membrane_integrity_inhibitor,           ,             0.0016745768408766735
+proteasome_inhibitor,           ,             0.0017390523931388369
+aldehyde_dehydrogenase_inhibitor,           ,             0.0019298604184461701
+atp_synthase_inhibitor,           ,             0.001942932725281251
+atm_kinase_inhibitor,           ,             0.0021457644999823395
+adenylyl_cyclase_activator,           ,             0.00216032981464974
+lxr_agonist,           ,             0.0021913086204445884
+protein_phosphatase_inhibitor,           ,             0.002273065357746912
+tropomyosin_receptor_kinase_inhibitor,           ,             0.0022898489924886908
+tgf-beta_receptor_inhibitor,           ,             0.0022990875282779544
+autotaxin_inhibitor,           ,             0.002317843450146586
+retinoid_receptor_antagonist,           ,             0.002330712927678375
+ubiquitin_specific_protease_inhibitor,           ,             0.002403153546881659
+diuretic,           ,             0.002422858150881597
+nicotinic_receptor_agonist,           ,             0.002442600824479879
+elastase_inhibitor,           ,             0.002444577945084678
+steroid,           ,             0.002456537983259734
+antiarrhythmic,           ,             0.0024726724297438195
+laxative,           ,             0.002486348705818346
+calcineurin_inhibitor,           ,             0.0024880532925670934
+leukotriene_inhibitor,           ,             0.0025176583070440953
+coagulation_factor_inhibitor,           ,             0.0025375247074331583
+norepinephrine_reuptake_inhibitor,           ,             0.0027970088436054916
+tlr_antagonist,           ,             0.0028240081185348562
+focal_adhesion_kinase_inhibitor,           ,             0.002832564775218138
+farnesyltransferase_inhibitor,           ,             0.0030519643041628628
+chk_inhibitor,           ,             0.003097665619061142
+nitric_oxide_production_inhibitor,           ,             0.003455993311951969
+atr_kinase_inhibitor,           ,             0.004067198557673466
+ras_gtpase_inhibitor,           ,             0.004075704099970658
+analgesic,           ,             0.0041880959402213385
+antifungal,           ,             0.004205128270453948
+glutamate_inhibitor,           ,             0.004222217509694237
+antihistamine,           ,             0.004256737041182034
+monoacylglycerol_lipase_inhibitor,           ,             0.004311550561264538
+nrf2_activator,           ,             0.004350664717240197
+anticonvulsant,           ,             0.004364049748101954
+lipase_inhibitor,           ,             0.004399094803230283
+ampk_activator,           ,             0.00441684514426625
+catechol_o_methyltransferase_inhibitor,           ,             0.004444266450068553
+5-alpha_reductase_inhibitor,           ,             0.0046291869213498415
+syk_inhibitor,           ,             0.0046472055380660975
+monopolar_spindle_1_kinase_inhibitor,           ,             0.004703587381194115
+progesterone_receptor_antagonist,           ,             0.0052961477597827
+pdk_inhibitor,           ,             0.005657573532181088
+antimalarial,           ,             0.005743932744375313
+11-beta-hsd1_inhibitor,           ,             0.005841585880100178
+caspase_activator,           ,             0.0059142914523978634
+cck_receptor_antagonist,           ,             0.005963151785815019
+gonadotropin_receptor_agonist,           ,             0.006019833266101565
+free_radical_scavenger,           ,             0.006041274122817622
+mdm_inhibitor,           ,             0.006064866018179923
+transient_receptor_potential_channel_antagonist,           ,             0.0061642849519125175
+thrombin_inhibitor,           ,             0.00618122628862096
+histone_lysine_demethylase_inhibitor,           ,             0.006189561616691706
+protein_tyrosine_kinase_inhibitor,           ,             0.006202194490471471
+raf_inhibitor,           ,             0.006224428117917642
+ikk_inhibitor,           ,             0.006467133120556868
+trpv_agonist,           ,             0.006504692294939294
+hsp_inhibitor,           ,             0.006664626377334965
+fungal_squalene_epoxidase_inhibitor,           ,             0.006875408140678023
+mek_inhibitor,           ,             0.00725860685855209
+rna_polymerase_inhibitor,           ,             0.007274676122484251
+btk_inhibitor,           ,             0.007363116006330322
+p-glycoprotein_inhibitor,           ,             0.007386358064046332
+corticosteroid_agonist,           ,             0.007527755951006094
+antiviral,           ,             0.007543327833817222
+bcr-abl_inhibitor,           ,             0.007575592568491134
+rho_associated_kinase_inhibitor,           ,             0.007586304069277843
+fatty_acid_receptor_agonist,           ,             0.007606088673100711
+smoothened_receptor_antagonist,           ,             0.007687896700725188
+bcl_inhibitor,           ,             0.007733785375085395
+mineralocorticoid_receptor_antagonist,           ,             0.0077861063828094
+dipeptidyl_peptidase_inhibitor,           ,             0.007793376106004132
+sphingosine_receptor_agonist,           ,             0.007891414365403433
+phospholipase_inhibitor,           ,             0.007908266320163986
+acat_inhibitor,           ,             0.007919573418398376
+beta_amyloid_inhibitor,           ,             0.008025726895550811
+nitric_oxide_donor,           ,             0.008183043913491662
+pkc_inhibitor,           ,             0.008264321592722943
+vitamin_b,           ,             0.008265106179497876
+nitric_oxide_synthase_inhibitor,           ,             0.008268980398157324
+ribonucleoside_reductase_inhibitor,           ,             0.00827604297814779
+dihydrofolate_reductase_inhibitor,           ,             0.008287918186028956
+vitamin_d_receptor_agonist,           ,             0.00835146857348086
+igf-1_inhibitor,           ,             0.008416780716968027
+p38_mapk_inhibitor,           ,             0.008582242752282306
+ppar_receptor_antagonist,           ,             0.008789253939248716
+histone_lysine_methyltransferase_inhibitor,           ,             0.008875268528024914
+gsk_inhibitor,           ,             0.008897315584373792
+wnt_inhibitor,           ,             0.009021894130330487
+insulin_secretagogue,           ,             0.00910521091712382
+alk_inhibitor,           ,             0.009182056701976152
+imidazoline_receptor_agonist,           ,             0.009531654892194425
+fgfr_inhibitor,           ,             0.009555665793350933
+tlr_agonist,           ,             0.009585144310247795
+thymidylate_synthase_inhibitor,           ,             0.009705152284736358
+hdac_inhibitor,           ,             0.0097966753909453
+faah_inhibitor,           ,             0.00982864250793528
+gamma_secretase_inhibitor,           ,             0.009849786843851483
+neuropeptide_receptor_antagonist,           ,             0.00999407736287949
+tnf_inhibitor,           ,             0.010446375698590514
+bacterial_antifolate,           ,             0.010559231515646752
+casein_kinase_inhibitor,           ,             0.01068054955803738
+prostaglandin_inhibitor,           ,             0.010734265564089154
+sigma_receptor_antagonist,           ,             0.010818326070582416
+sigma_receptor_agonist,           ,             0.01088388967617255
+carbonic_anhydrase_inhibitor,           ,             0.01093228064891106
+antiprotozoal,           ,             0.010978965885596428
+aurora_kinase_inhibitor,           ,             0.011002195380821367
+hmgcr_inhibitor,           ,             0.011019327135351968
+angiogenesis_inhibitor,           ,             0.01106714018430334
+akt_inhibitor,           ,             0.011085524377306415
+angiotensin_receptor_antagonist,           ,             0.011225681133084985
+antibiotic,           ,             0.011293378147834533
+jak_inhibitor,           ,             0.011432103279801662
+orexin_receptor_antagonist,           ,             0.011433160324636626
+chloride_channel_blocker,           ,             0.01199453797087642
+integrin_inhibitor,           ,             0.012325627093747002
+cannabinoid_receptor_agonist,           ,             0.012348928676452783
+insulin_sensitizer,           ,             0.012411845820982382
+bromodomain_inhibitor,           ,             0.01254009176297931
+serotonin_reuptake_inhibitor,           ,             0.012552030725133
+topoisomerase_inhibitor,           ,             0.012768374359515474
+estrogen_receptor_antagonist,           ,             0.012879400220090969
+protein_kinase_inhibitor,           ,             0.013441575693209872
+dna_alkylating_agent,           ,             0.013600969501029209
+src_inhibitor,           ,             0.013619164646959106
+apoptosis_stimulant,           ,             0.01368997067643499
+aromatase_inhibitor,           ,             0.013766609110031403
+cholesterol_inhibitor,           ,             0.013932098451717013
+glucocorticoid_receptor_agonist,           ,             0.013970754994905714
+androgen_receptor_agonist,           ,             0.013987618896880558
+trpv_antagonist,           ,             0.01400101881733935
+mucolytic_agent,           ,             0.014023821232994988
+mtor_inhibitor,           ,             0.014155355923133462
+retinoid_receptor_agonist,           ,             0.014348184707840349
+egfr_inhibitor,           ,             0.01458459159282349
+parp_inhibitor,           ,             0.0147771730470246
+adenosine_receptor_agonist,           ,             0.015046619329124938
+chelating_agent,           ,             0.015088681779592045
+potassium_channel_activator,           ,             0.015259677320474655
+cholinergic_receptor_antagonist,           ,             0.015310410716197697
+cannabinoid_receptor_antagonist,           ,             0.015342683217421549
+radiopaque_medium,           ,             0.01603559817621287
+lipoxygenase_inhibitor,           ,             0.016161329560417704
+immunosuppressant,           ,             0.016613060754931994
+histamine_receptor_agonist,           ,             0.01665581218160842
+bacterial_30s_ribosomal_subunit_inhibitor,           ,             0.016744703635122007
+leukotriene_receptor_antagonist,           ,             0.016796743553323366
+tachykinin_antagonist,           ,             0.01682434238425357
+cdk_inhibitor,           ,             0.01690246725375925
+opioid_receptor_agonist,           ,             0.017049624154836435
+tyrosine_kinase_inhibitor,           ,             0.01771045968376883
+anti-inflammatory,           ,             0.017813833159167864
+benzodiazepine_receptor_agonist,           ,             0.01845081803519164
+kit_inhibitor,           ,             0.01863372485405365
+flt3_inhibitor,           ,             0.019095608506155763
+hiv_inhibitor,           ,             0.019309211548747117
+hcv_inhibitor,           ,             0.01951200177650134
+tubulin_inhibitor,           ,             0.019636671928698852
+atpase_inhibitor,           ,             0.01984673359663371
+antioxidant,           ,             0.01985020985036764
+membrane_integrity_inhibitor,           ,             0.020021976021383538
+glutamate_receptor_agonist,           ,             0.020323664844410647
+acetylcholinesterase_inhibitor,           ,             0.02046441903760755
+bacterial_50s_ribosomal_subunit_inhibitor,           ,             0.020557307080745397
+protein_synthesis_inhibitor,           ,             0.020743634801928798
+pdgfr_inhibitor,           ,             0.021347684819521696
+anesthetic_-_local,           ,             0.02164955125400978
+prostanoid_receptor_antagonist,           ,             0.02248071848139191
+monoamine_oxidase_inhibitor,           ,             0.022715318294743433
+pi3k_inhibitor,           ,             0.022838858323639813
+bacterial_dna_gyrase_inhibitor,           ,             0.023380531719586668
+androgen_receptor_antagonist,           ,             0.023769942104033537
+opioid_receptor_antagonist,           ,             0.02478683724385771
+adenosine_receptor_antagonist,           ,             0.025053842902749198
+potassium_channel_antagonist,           ,             0.025608621874922508
+ppar_receptor_agonist,           ,             0.025633703870792838
+cytochrome_p450_inhibitor,           ,             0.026019530307482476
+vegfr_inhibitor,           ,             0.026140324008897958
+cc_chemokine_receptor_antagonist,           ,             0.026386464535859307
+progesterone_receptor_agonist,           ,             0.026509170746090095
+gaba_receptor_agonist,           ,             0.026964174907006273
+bacterial_dna_inhibitor,           ,             0.02810252839625791
+nfkb_inhibitor,           ,             0.029612578097144283
+dopamine_receptor_agonist,           ,             0.030564349266046502
+estrogen_receptor_agonist,           ,             0.0374260985489729
+gaba_receptor_antagonist,           ,             0.03962788809790109
+acetylcholine_receptor_agonist,           ,             0.043695102514838054
+bacterial_cell_wall_synthesis_inhibitor,           ,             0.04465092922174848
+serotonin_receptor_agonist,           ,             0.05302786878611425
+histamine_receptor_antagonist,           ,             0.05401399973070649
+adrenergic_receptor_agonist,           ,             0.0552417052468546
+phosphodiesterase_inhibitor,           ,             0.0568014142138106
+sodium_channel_inhibitor,           ,             0.058883860464221595
+calcium_channel_blocker,           ,             0.060370902121270366
+acetylcholine_receptor_antagonist,           ,             0.0642023218049125
+dna_inhibitor,           ,             0.07369213163454885
+adrenergic_receptor_antagonist,           ,             0.07452665689562864
+glutamate_receptor_antagonist,           ,             0.07574249762328374
+serotonin_receptor_antagonist,           ,             0.07946423072179278
+dopamine_receptor_antagonist,           ,             0.08081277368483165
+cyclooxygenase_inhibitor,           ,             0.08520637568649488

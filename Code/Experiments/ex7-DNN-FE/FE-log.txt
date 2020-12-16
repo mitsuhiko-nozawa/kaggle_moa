@@ -1,0 +1,358 @@
+======================== fold 1 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5763969575797302, valid_loss: 0.05727217559303556, time: 3.056628942489624
+EPOCH: 5, train_loss: 0.021046383805788944, valid_loss: 0.018080175508345876, time: 19.549985647201538
+EPOCH: 10, train_loss: 0.020518804724881615, valid_loss: 0.01811397863285882, time: 33.526246309280396
+EPOCH: 15, train_loss: 0.02011489139302917, valid_loss: 0.01761931183614901, time: 49.41473054885864
+EPOCH: 20, train_loss: 0.019121109116552532, valid_loss: 0.017355944056596073, time: 63.098716497421265
+training until max epoch 25,  : best itaration is 24, valid loss is 0.017273083169545445, time: 63.098716497421265
+======================== fold 2 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5712335707646781, valid_loss: 0.046907145420418066, time: 3.127332925796509
+EPOCH: 5, train_loss: 0.021087188584109146, valid_loss: 0.017613449955687803, time: 17.998587131500244
+EPOCH: 10, train_loss: 0.02054258691065985, valid_loss: 0.017247768201153067, time: 33.44264578819275
+EPOCH: 15, train_loss: 0.020142908707477043, valid_loss: 0.01716990935999681, time: 47.99344086647034
+EPOCH: 20, train_loss: 0.019083662592954395, valid_loss: 0.0168008545468397, time: 63.166191816329956
+training until max epoch 25,  : best itaration is 24, valid loss is 0.01673974737744121, time: 63.166191816329956
+======================== fold 3 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5720615709458825, valid_loss: 0.05136286935635975, time: 2.3804421424865723
+EPOCH: 5, train_loss: 0.020980407898552225, valid_loss: 0.017989551169531687, time: 16.957640647888184
+EPOCH: 10, train_loss: 0.020473509863780364, valid_loss: 0.01800721383520535, time: 32.495075941085815
+EPOCH: 15, train_loss: 0.020004860866461357, valid_loss: 0.01789432769375188, time: 47.01746153831482
+EPOCH: 20, train_loss: 0.01896212241836708, valid_loss: 0.017628543451428412, time: 62.41326975822449
+training until max epoch 25,  : best itaration is 24, valid loss is 0.0175578380801848, time: 62.41326975822449
+======================== fold 4 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5709237664722014, valid_loss: 0.048564930260181424, time: 2.4185712337493896
+EPOCH: 5, train_loss: 0.02119615876480289, valid_loss: 0.017489893628018244, time: 18.499927043914795
+EPOCH: 10, train_loss: 0.02067305105805829, valid_loss: 0.017497040810329573, time: 33.25433015823364
+EPOCH: 15, train_loss: 0.020361093439809654, valid_loss: 0.01703094257307904, time: 49.48984217643738
+EPOCH: 20, train_loss: 0.01930203091731106, valid_loss: 0.016806176730564663, time: 63.36984419822693
+training until max epoch 25,  : best itaration is 23, valid loss is 0.0167284849232861, time: 63.36984419822693
+======================== fold 5 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5745423110066981, valid_loss: 0.05685584683503423, time: 2.5830938816070557
+EPOCH: 5, train_loss: 0.0208487284599223, valid_loss: 0.018340467289090157, time: 17.824241161346436
+EPOCH: 10, train_loss: 0.020433667284584997, valid_loss: 0.018068189679511956, time: 32.494245529174805
+EPOCH: 15, train_loss: 0.01994541619458924, valid_loss: 0.018091742321848868, time: 48.01906895637512
+EPOCH: 20, train_loss: 0.018989769951102957, valid_loss: 0.01773187866700547, time: 63.236104011535645
+training until max epoch 25,  : best itaration is 24, valid loss is 0.01767520292529038, time: 63.236104011535645
+seed 0 , cv score : 0.017216888789698674
+======================== fold 1 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.573442623943743, valid_loss: 0.0550512327679566, time: 3.2617075443267822
+EPOCH: 5, train_loss: 0.02090123876331061, valid_loss: 0.017897604645362924, time: 18.924524784088135
+EPOCH: 10, train_loss: 0.020495707699417196, valid_loss: 0.017673523431377753, time: 34.722198724746704
+EPOCH: 15, train_loss: 0.0201091445764921, valid_loss: 0.017335910722613333, time: 49.916967153549194
+EPOCH: 20, train_loss: 0.019174324348568916, valid_loss: 0.017051310890487264, time: 65.21381783485413
+training until max epoch 25,  : best itaration is 24, valid loss is 0.016987367479928902, time: 65.21381783485413
+======================== fold 2 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5742450085185145, valid_loss: 0.05085244295852525, time: 3.653088331222534
+EPOCH: 5, train_loss: 0.02122191627226446, valid_loss: 0.017598800973168443, time: 18.87613797187805
+EPOCH: 10, train_loss: 0.020574389767927536, valid_loss: 0.017323182336986064, time: 33.967188358306885
+EPOCH: 15, train_loss: 0.02023885590766651, valid_loss: 0.017221874717090812, time: 49.96868371963501
+EPOCH: 20, train_loss: 0.019255317950054356, valid_loss: 0.016817513640437806, time: 64.62337279319763
+training until max epoch 25,  : best itaration is 22, valid loss is 0.01677017565816641, time: 64.62337279319763
+======================== fold 3 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5725882586793624, valid_loss: 0.05797918885946274, time: 2.8848414421081543
+EPOCH: 5, train_loss: 0.020868091371612274, valid_loss: 0.018382885822040194, time: 18.00834822654724
+EPOCH: 10, train_loss: 0.02041896073606567, valid_loss: 0.018362857017885235, time: 33.51832962036133
+EPOCH: 15, train_loss: 0.02008447126633879, valid_loss: 0.017760162789593723, time: 48.91181397438049
+EPOCH: 20, train_loss: 0.019057007277033466, valid_loss: 0.01769631325869876, time: 64.10083770751953
+training until max epoch 25,  : best itaration is 21, valid loss is 0.01755066657000605, time: 64.10083770751953
+======================== fold 4 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5723089857593827, valid_loss: 0.05107752499835832, time: 2.6779584884643555
+EPOCH: 5, train_loss: 0.02075015715714814, valid_loss: 0.01823541098939521, time: 19.559815406799316
+EPOCH: 10, train_loss: 0.020358846873800823, valid_loss: 0.01791330807443176, time: 34.64892911911011
+EPOCH: 15, train_loss: 0.019974714887422928, valid_loss: 0.01792735465403114, time: 50.54292440414429
+EPOCH: 20, train_loss: 0.01892107185246288, valid_loss: 0.017526370340159962, time: 64.26520133018494
+training until max epoch 25,  : best itaration is 24, valid loss is 0.017434826253780296, time: 64.26520133018494
+======================== fold 5 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5745166579574129, valid_loss: 0.05540777178747314, time: 2.9579193592071533
+EPOCH: 5, train_loss: 0.021051445296102197, valid_loss: 0.017647301432277475, time: 18.95198678970337
+EPOCH: 10, train_loss: 0.020589326066474845, valid_loss: 0.017643827572464944, time: 35.21091389656067
+EPOCH: 15, train_loss: 0.020226790331793528, valid_loss: 0.017200121017439025, time: 50.03037786483765
+EPOCH: 20, train_loss: 0.019207663256267125, valid_loss: 0.01697391401976347, time: 67.90995669364929
+training until max epoch 25,  : best itaration is 22, valid loss is 0.0168672631627747, time: 67.90995669364929
+seed 1 , cv score : 0.017167645240362562
+======================== fold 1 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.573505579561427, valid_loss: 0.051093561734472, time: 3.0080485343933105
+EPOCH: 5, train_loss: 0.0209955973415703, valid_loss: 0.017957775481045248, time: 15.601132869720459
+EPOCH: 10, train_loss: 0.020545349901785023, valid_loss: 0.01777288048927273, time: 30.313145875930786
+EPOCH: 15, train_loss: 0.020107418109757313, valid_loss: 0.01749410421720573, time: 45.16317820549011
+EPOCH: 20, train_loss: 0.019048601361936417, valid_loss: 0.01726052524255855, time: 60.80750226974487
+training until max epoch 25,  : best itaration is 22, valid loss is 0.017223347617047174, time: 60.80750226974487
+======================== fold 2 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.572530335193311, valid_loss: 0.0529127153967108, time: 3.5022192001342773
+EPOCH: 5, train_loss: 0.020991898951647076, valid_loss: 0.018111052523766245, time: 19.861454010009766
+EPOCH: 10, train_loss: 0.02052509213757256, valid_loss: 0.017993868248803276, time: 36.1387403011322
+EPOCH: 15, train_loss: 0.020107478389273518, valid_loss: 0.017822725485478128, time: 51.14643120765686
+EPOCH: 20, train_loss: 0.01906459231901428, valid_loss: 0.01747784297913313, time: 66.81112408638
+training until max epoch 25,  : best itaration is 24, valid loss is 0.01737602281251124, time: 66.81112408638
+======================== fold 3 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5735493833874015, valid_loss: 0.0526845066675118, time: 3.6575539112091064
+EPOCH: 5, train_loss: 0.02112060851430979, valid_loss: 0.017959989101759024, time: 19.45302152633667
+EPOCH: 10, train_loss: 0.02060156609809053, valid_loss: 0.01791704712169511, time: 36.55972480773926
+EPOCH: 15, train_loss: 0.02015330348217833, valid_loss: 0.017473482766321727, time: 52.504289627075195
+EPOCH: 20, train_loss: 0.01914325809997061, valid_loss: 0.017242096976510118, time: 69.13473176956177
+training until max epoch 25,  : best itaration is 23, valid loss is 0.017146808787115983, time: 69.13473176956177
+======================== fold 4 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5755079946052419, valid_loss: 0.05801462594951902, time: 3.520380735397339
+EPOCH: 5, train_loss: 0.02084549417189003, valid_loss: 0.017980893541659628, time: 18.954763650894165
+EPOCH: 10, train_loss: 0.020541572413087763, valid_loss: 0.017661979794502257, time: 34.40719223022461
+EPOCH: 15, train_loss: 0.020157315299241214, valid_loss: 0.01763933944915022, time: 49.68653392791748
+EPOCH: 20, train_loss: 0.01909372814842602, valid_loss: 0.017199181020259857, time: 64.69278907775879
+training until max epoch 25,  : best itaration is 22, valid loss is 0.017177393580121655, time: 64.69278907775879
+======================== fold 5 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5749403539559116, valid_loss: 0.05176054994974818, time: 3.3992092609405518
+EPOCH: 5, train_loss: 0.021034111970684666, valid_loss: 0.017599545578871455, time: 18.326618671417236
+EPOCH: 10, train_loss: 0.02076550890300153, valid_loss: 0.017328693717718124, time: 35.32997226715088
+EPOCH: 15, train_loss: 0.020382820966019146, valid_loss: 0.017172383703291418, time: 50.22408413887024
+EPOCH: 20, train_loss: 0.01931992974942145, valid_loss: 0.016812367205108914, time: 66.01973724365234
+training until max epoch 25,  : best itaration is 21, valid loss is 0.016710054874420167, time: 66.01973724365234
+seed 2 , cv score : 0.017170066601105344
+======================== fold 1 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5721839598069588, valid_loss: 0.047296069136687685, time: 2.499842882156372
+EPOCH: 5, train_loss: 0.02098552232095297, valid_loss: 0.017775547557643483, time: 19.486709117889404
+EPOCH: 10, train_loss: 0.02061912048932003, valid_loss: 0.017438377546412604, time: 33.88815402984619
+EPOCH: 15, train_loss: 0.020224900713757328, valid_loss: 0.01717239698129041, time: 50.33141899108887
+EPOCH: 20, train_loss: 0.01911678190842487, valid_loss: 0.017013106681406497, time: 65.64088177680969
+training until max epoch 25,  : best itaration is 21, valid loss is 0.016919107069926602, time: 65.64088177680969
+======================== fold 2 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.572759311835187, valid_loss: 0.04972594077972805, time: 2.9979021549224854
+EPOCH: 5, train_loss: 0.020782095501604286, valid_loss: 0.018299941630924448, time: 19.14973258972168
+EPOCH: 10, train_loss: 0.020401718243416668, valid_loss: 0.018139213652295226, time: 36.020702600479126
+EPOCH: 15, train_loss: 0.019897547860940296, valid_loss: 0.01794924441834583, time: 50.68061447143555
+EPOCH: 20, train_loss: 0.01891455140666685, valid_loss: 0.01766482792685137, time: 67.67207503318787
+training until max epoch 25,  : best itaration is 23, valid loss is 0.017583057010436758, time: 67.67207503318787
+======================== fold 3 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5735609973542881, valid_loss: 0.051013042884213586, time: 2.4298079013824463
+EPOCH: 5, train_loss: 0.02102889408812906, valid_loss: 0.017724116652139594, time: 19.333550930023193
+EPOCH: 10, train_loss: 0.02056916172269487, valid_loss: 0.017671004656170095, time: 34.04360556602478
+EPOCH: 15, train_loss: 0.02026296585091274, valid_loss: 0.017336352887962547, time: 50.62940454483032
+EPOCH: 20, train_loss: 0.019196414042019497, valid_loss: 0.01704904849507979, time: 65.3589653968811
+training until max epoch 25,  : best itaration is 24, valid loss is 0.017034371250442097, time: 65.3589653968811
+======================== fold 4 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.573065334373582, valid_loss: 0.050404836343867436, time: 2.9547576904296875
+EPOCH: 5, train_loss: 0.02087876645263529, valid_loss: 0.018172542138823442, time: 17.864290475845337
+EPOCH: 10, train_loss: 0.02054019538808043, valid_loss: 0.018158643852387156, time: 33.820942640304565
+EPOCH: 15, train_loss: 0.02007007484670973, valid_loss: 0.017677080844129833, time: 49.85737061500549
+EPOCH: 20, train_loss: 0.01911504788283449, valid_loss: 0.017333561341677392, time: 65.68683290481567
+training until max epoch 25,  : best itaration is 20, valid loss is 0.017333561341677392, time: 65.68683290481567
+======================== fold 5 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5734020655407853, valid_loss: 0.051401518604585104, time: 3.3624026775360107
+EPOCH: 5, train_loss: 0.021021840378534103, valid_loss: 0.017678062883870943, time: 19.040021657943726
+EPOCH: 10, train_loss: 0.020641024224460125, valid_loss: 0.017391560173460417, time: 35.79658532142639
+EPOCH: 15, train_loss: 0.020226409753271633, valid_loss: 0.017284105877791132, time: 52.34241724014282
+EPOCH: 20, train_loss: 0.01919171952413044, valid_loss: 0.0169866450929216, time: 66.51417541503906
+training until max epoch 25,  : best itaration is 24, valid loss is 0.016868986482066767, time: 66.51417541503906
+seed 3 , cv score : 0.017200497367673113
+======================== fold 1 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5724249436803486, valid_loss: 0.050461780492748534, time: 2.335108757019043
+EPOCH: 5, train_loss: 0.020878105653800827, valid_loss: 0.018208895224545683, time: 17.566749811172485
+EPOCH: 10, train_loss: 0.020440912792000217, valid_loss: 0.018112820919070925, time: 33.48079824447632
+EPOCH: 15, train_loss: 0.019995636171728805, valid_loss: 0.01763349151504891, time: 48.30664348602295
+EPOCH: 20, train_loss: 0.019047857478153015, valid_loss: 0.017555500034775053, time: 63.60302495956421
+training until max epoch 25,  : best itaration is 23, valid loss is 0.0174106755693044, time: 63.60302495956421
+======================== fold 2 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5727707590010479, valid_loss: 0.05252114704677037, time: 3.3508613109588623
+EPOCH: 5, train_loss: 0.020951182588282293, valid_loss: 0.018395507468708924, time: 19.002203702926636
+EPOCH: 10, train_loss: 0.020458634276568455, valid_loss: 0.018683391862681933, time: 34.48296308517456
+EPOCH: 15, train_loss: 0.019966857004774748, valid_loss: 0.018007366093141693, time: 49.59156918525696
+EPOCH: 20, train_loss: 0.01904298729487579, valid_loss: 0.017575282018099513, time: 64.95410966873169
+training until max epoch 25,  : best itaration is 24, valid loss is 0.01751262809016875, time: 64.95410966873169
+======================== fold 3 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5747997851745374, valid_loss: 0.05021417790225574, time: 3.622270107269287
+EPOCH: 5, train_loss: 0.020923317963446396, valid_loss: 0.01765980175031083, time: 19.164002418518066
+EPOCH: 10, train_loss: 0.02059140640810348, valid_loss: 0.017625263280102183, time: 35.857378244400024
+EPOCH: 15, train_loss: 0.020189608946658562, valid_loss: 0.017505106276699475, time: 51.013726234436035
+EPOCH: 20, train_loss: 0.01914234730698492, valid_loss: 0.01702765535031046, time: 66.06959223747253
+training until max epoch 25,  : best itaration is 23, valid loss is 0.016968181117304734, time: 66.06959223747253
+======================== fold 4 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5770171045930717, valid_loss: 0.05217856839299202, time: 2.8909952640533447
+EPOCH: 5, train_loss: 0.021223939778487178, valid_loss: 0.01757859614278589, time: 17.911614179611206
+EPOCH: 10, train_loss: 0.020670032835681074, valid_loss: 0.01733463568879025, time: 33.77456307411194
+EPOCH: 15, train_loss: 0.02026330902628655, valid_loss: 0.017061390381838595, time: 48.66323161125183
+EPOCH: 20, train_loss: 0.01922800801150555, valid_loss: 0.016915715991386346, time: 64.31013488769531
+training until max epoch 25,  : best itaration is 23, valid loss is 0.016776189420904433, time: 64.31013488769531
+======================== fold 5 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5740679738422235, valid_loss: 0.05015214841280665, time: 2.415619134902954
+EPOCH: 5, train_loss: 0.021080301399680153, valid_loss: 0.017871659568377902, time: 19.23576521873474
+EPOCH: 10, train_loss: 0.02066028868590576, valid_loss: 0.017542390684996332, time: 34.11628484725952
+EPOCH: 15, train_loss: 0.02021363034736419, valid_loss: 0.01732516677251884, time: 50.37705850601196
+EPOCH: 20, train_loss: 0.01911028481318035, valid_loss: 0.017001403256186418, time: 65.00039482116699
+training until max epoch 25,  : best itaration is 20, valid loss is 0.017001403256186418, time: 65.00039482116699
+seed 4 , cv score : 0.01721564350077506
+======================== fold 1 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5731395661183025, valid_loss: 0.04769713186791965, time: 3.2533488273620605
+EPOCH: 5, train_loss: 0.021004000516689342, valid_loss: 0.017813179615352837, time: 18.583504915237427
+EPOCH: 10, train_loss: 0.020760726440104023, valid_loss: 0.017787363885768823, time: 34.72022867202759
+EPOCH: 15, train_loss: 0.020277685161841953, valid_loss: 0.01741707588412932, time: 48.879056215286255
+EPOCH: 20, train_loss: 0.01933726405157991, valid_loss: 0.017053997942379544, time: 65.43272352218628
+training until max epoch 25,  : best itaration is 21, valid loss is 0.017015830374189786, time: 65.43272352218628
+======================== fold 2 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5731023509517639, valid_loss: 0.052751145298991886, time: 2.8773882389068604
+EPOCH: 5, train_loss: 0.020945936930875708, valid_loss: 0.01845579743385315, time: 18.9787859916687
+EPOCH: 10, train_loss: 0.02040143903807132, valid_loss: 0.018317041040531227, time: 33.335811376571655
+EPOCH: 15, train_loss: 0.02001520012416979, valid_loss: 0.018199368938803674, time: 50.22698378562927
+EPOCH: 20, train_loss: 0.01896648375439818, valid_loss: 0.017794542892702988, time: 64.17888760566711
+training until max epoch 25,  : best itaration is 24, valid loss is 0.017737232787268502, time: 64.17888760566711
+======================== fold 3 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5723205630168102, valid_loss: 0.05045400038361549, time: 2.5391533374786377
+EPOCH: 5, train_loss: 0.021159126612263313, valid_loss: 0.017431320356471196, time: 18.278969526290894
+EPOCH: 10, train_loss: 0.020696156428775925, valid_loss: 0.01745294438941138, time: 33.87264013290405
+EPOCH: 15, train_loss: 0.02022840671133304, valid_loss: 0.016970121009009225, time: 48.8053662776947
+EPOCH: 20, train_loss: 0.01924779082553974, valid_loss: 0.01670925308551107, time: 65.27145767211914
+training until max epoch 25,  : best itaration is 23, valid loss is 0.016661865477051053, time: 65.27145767211914
+======================== fold 4 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5738381696729988, valid_loss: 0.05307826761688505, time: 3.470808744430542
+EPOCH: 5, train_loss: 0.021162607909544655, valid_loss: 0.017689353387270654, time: 19.093159198760986
+EPOCH: 10, train_loss: 0.020642633725335632, valid_loss: 0.01748912443539926, time: 34.71739149093628
+EPOCH: 15, train_loss: 0.020262669353489426, valid_loss: 0.017322996418390954, time: 50.48050618171692
+EPOCH: 20, train_loss: 0.019255417912010696, valid_loss: 0.017011951548712594, time: 65.27501320838928
+training until max epoch 25,  : best itaration is 21, valid loss is 0.016895513768707, time: 65.27501320838928
+======================== fold 5 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5728707607241644, valid_loss: 0.04975270863090243, time: 3.703092336654663
+EPOCH: 5, train_loss: 0.020828773119095444, valid_loss: 0.018045398513121265, time: 19.59941577911377
+EPOCH: 10, train_loss: 0.020575003792950207, valid_loss: 0.01796489344643695, time: 34.92171931266785
+EPOCH: 15, train_loss: 0.020126352208140103, valid_loss: 0.017568501324525903, time: 50.281620025634766
+EPOCH: 20, train_loss: 0.01908709893030101, valid_loss: 0.01725032537111214, time: 65.86980819702148
+training until max epoch 25,  : best itaration is 20, valid loss is 0.01725032537111214, time: 65.86980819702148
+seed 5 , cv score : 0.017192811882951377
+======================== fold 1 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5740585287448263, valid_loss: 0.05220591330102512, time: 3.7192542552948
+EPOCH: 5, train_loss: 0.0211239772556472, valid_loss: 0.017751229288322585, time: 18.9347403049469
+EPOCH: 10, train_loss: 0.02060655894668868, valid_loss: 0.0180575890732663, time: 34.5945725440979
+EPOCH: 15, train_loss: 0.020142318912013603, valid_loss: 0.017385828415197986, time: 49.76487445831299
+EPOCH: 20, train_loss: 0.019106388309576214, valid_loss: 0.01720297049198832, time: 65.1544029712677
+training until max epoch 25,  : best itaration is 24, valid loss is 0.01711770785706384, time: 65.1544029712677
+======================== fold 2 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5757501733259879, valid_loss: 0.04919848271778652, time: 3.4852712154388428
+EPOCH: 5, train_loss: 0.021131803281605244, valid_loss: 0.01786828182105507, time: 19.59060287475586
+EPOCH: 10, train_loss: 0.02075624359312697, valid_loss: 0.017813654110899992, time: 35.165220499038696
+EPOCH: 15, train_loss: 0.02034742055811744, valid_loss: 0.01749165848429714, time: 50.150482177734375
+EPOCH: 20, train_loss: 0.019432005148542965, valid_loss: 0.017153974436223508, time: 65.95154213905334
+training until max epoch 25,  : best itaration is 21, valid loss is 0.017049478287143368, time: 65.95154213905334
+======================== fold 3 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5711965652155704, valid_loss: 0.05637484021923121, time: 2.592165946960449
+EPOCH: 5, train_loss: 0.020856801771383354, valid_loss: 0.01792792699244969, time: 18.10931706428528
+EPOCH: 10, train_loss: 0.020584061471880345, valid_loss: 0.017865928054294166, time: 34.00676226615906
+EPOCH: 15, train_loss: 0.02009161596820838, valid_loss: 0.017526868867742663, time: 50.65472745895386
+EPOCH: 20, train_loss: 0.01906251777773318, valid_loss: 0.01722494249834734, time: 66.03467512130737
+training until max epoch 25,  : best itaration is 23, valid loss is 0.017089357106562925, time: 66.03467512130737
+======================== fold 4 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5730353981742392, valid_loss: 0.05131630588855062, time: 2.6250782012939453
+EPOCH: 5, train_loss: 0.021024292523878208, valid_loss: 0.018005533569625445, time: 19.491419553756714
+EPOCH: 10, train_loss: 0.020589120159654514, valid_loss: 0.017529997868197304, time: 35.02392911911011
+EPOCH: 15, train_loss: 0.020240623814364273, valid_loss: 0.01735441518415298, time: 50.4785692691803
+EPOCH: 20, train_loss: 0.019150870865669804, valid_loss: 0.016785100142338447, time: 65.659921169281
+training until max epoch 25,  : best itaration is 24, valid loss is 0.01671318844226854, time: 65.659921169281
+======================== fold 5 ========================
+quantile
+PCA
+(21948, 838)
+EPOCH: 0, train_loss: 0.5760131755123173, valid_loss: 0.059772001313311715, time: 3.372392416000366
+EPOCH: 5, train_loss: 0.02084202944797321, valid_loss: 0.01817909955446209, time: 17.23712682723999
+EPOCH: 10, train_loss: 0.020457840014765732, valid_loss: 0.018100871757737228, time: 33.581722259521484
+EPOCH: 15, train_loss: 0.020001350419364707, valid_loss: 0.0179225160873362, time: 47.51367664337158
+EPOCH: 20, train_loss: 0.019000807709067407, valid_loss: 0.01759962732238429, time: 64.02712297439575
+training until max epoch 25,  : best itaration is 21, valid loss is 0.017498513657067505, time: 64.02712297439575
+seed 6 , cv score : 0.017186598792425206
+cv score : 0.01696476220349491

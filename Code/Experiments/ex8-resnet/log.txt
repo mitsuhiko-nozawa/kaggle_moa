@@ -1,0 +1,134 @@
+======================== fold 1 ========================
+quantile
+PCA
+17584
+915
+915
+EPOCH: 0, train_loss: 0.4694377307229451, valid_loss: 0.021487450546451976, time: 3.3577141761779785
+EPOCH: 5, train_loss: 0.021223246534592913, valid_loss: 0.01839931370424373, time: 20.605052709579468
+EPOCH: 10, train_loss: 0.021200454297618274, valid_loss: 0.01835889361266579, time: 38.63423562049866
+EPOCH: 15, train_loss: 0.02046806350295996, valid_loss: 0.017957312054932117, time: 56.61525368690491
+EPOCH: 20, train_loss: 0.019242459962511584, valid_loss: 0.017561373274241177, time: 73.8004641532898
+training until max epoch 25,  : best itaration is 21, valid loss is 0.017340123653411865, time: 87.75422430038452
+======================== fold 2 ========================
+quantile
+PCA
+17565
+915
+915
+EPOCH: 0, train_loss: 0.4692256659486868, valid_loss: 0.02058689266975437, time: 3.3541829586029053
+EPOCH: 5, train_loss: 0.021403426331651473, valid_loss: 0.017949399831039565, time: 21.29877805709839
+EPOCH: 10, train_loss: 0.021306372376797843, valid_loss: 0.018012854110981736, time: 39.195847272872925
+EPOCH: 15, train_loss: 0.020708776317047376, valid_loss: 0.017452070276652062, time: 56.40496897697449
+EPOCH: 20, train_loss: 0.01947193414679844, valid_loss: 0.016901760335479465, time: 74.44305777549744
+training until max epoch 25,  : best itaration is 23, valid loss is 0.016809548756905966, time: 88.39917325973511
+======================== fold 3 ========================
+quantile
+PCA
+17534
+915
+915
+EPOCH: 0, train_loss: 0.4712859012789148, valid_loss: 0.021662431742463795, time: 3.363314390182495
+EPOCH: 5, train_loss: 0.02125932800802676, valid_loss: 0.01819866866405521, time: 21.03849220275879
+EPOCH: 10, train_loss: 0.02118789274519419, valid_loss: 0.01817194851381438, time: 38.06581401824951
+EPOCH: 15, train_loss: 0.02061103785629658, valid_loss: 0.017814418088112557, time: 55.79642343521118
+EPOCH: 20, train_loss: 0.019333328859990135, valid_loss: 0.017230587585696153, time: 72.9795503616333
+training until max epoch 25,  : best itaration is 24, valid loss is 0.017090464622846673, time: 87.41349387168884
+======================== fold 4 ========================
+quantile
+PCA
+17504
+915
+915
+EPOCH: 0, train_loss: 0.4708253156037672, valid_loss: 0.021754877641797066, time: 3.369410276412964
+EPOCH: 5, train_loss: 0.021329883554512086, valid_loss: 0.01895992894257818, time: 20.36385726928711
+EPOCH: 10, train_loss: 0.021206731825847838, valid_loss: 0.01881822044295924, time: 37.86948609352112
+EPOCH: 15, train_loss: 0.02057321879136212, valid_loss: 0.01839404877807413, time: 54.89892911911011
+EPOCH: 20, train_loss: 0.019400177468710086, valid_loss: 0.017713450507393907, time: 72.85367107391357
+training until max epoch 25,  : best itaration is 24, valid loss is 0.01766529700585774, time: 87.22052240371704
+======================== fold 5 ========================
+quantile
+PCA
+17605
+915
+915
+EPOCH: 0, train_loss: 0.4687086659599177, valid_loss: 0.0216203047620023, time: 3.3294951915740967
+EPOCH: 5, train_loss: 0.02127755688924859, valid_loss: 0.01866001816576018, time: 21.183123111724854
+EPOCH: 10, train_loss: 0.021138459593601472, valid_loss: 0.018926634343669695, time: 39.00058436393738
+EPOCH: 15, train_loss: 0.020492517273791516, valid_loss: 0.018063041381537914, time: 56.09858179092407
+EPOCH: 20, train_loss: 0.019281600635961023, valid_loss: 0.017387141747509733, time: 73.7636833190918
+training until max epoch 25,  : best itaration is 22, valid loss is 0.017322272719705805, time: 87.45442056655884
+seed 7 , cv score : 0.017310820237025657
+
+class Model(nn.Module):
+    def __init__(self, num_features1, num_features2, num_targets):
+        super(Model, self).__init__()
+        self.h1_1 = 1024
+        self.h1_2 = 512  #
+        
+        self.h2_1 = num_features2+self.h1_2
+        self.h2_2 = 1024
+        self.h2_3 = 512  #
+        
+        self.h3_1 = 512
+        
+        self.head1 = nn.Sequential(
+            nn.BatchNorm1d(num_features1),
+            nn.Linear(num_features1, self.h1_1),
+            nn.LeakyReLU(),
+            
+            nn.BatchNorm1d(self.h1_1),
+            nn.Dropout(0.45),
+            nn.Linear(self.h1_1, self.h1_2),
+            nn.LeakyReLU(),
+        )
+        
+        self.head2 = nn.Sequential(
+            nn.BatchNorm1d(self.h2_1),
+            nn.Linear(self.h2_1, self.h2_2),
+            nn.ReLU(),
+            
+            nn.BatchNorm1d(self.h2_2),
+            nn.Dropout(0.45),
+            nn.Linear(self.h2_2, self.h2_2),
+            nn.ELU(),            
+            
+            nn.BatchNorm1d(self.h2_2),
+            nn.Dropout(0.45),
+            nn.Linear(self.h2_2, self.h2_3),
+            nn.ReLU(),  
+            
+            nn.BatchNorm1d(self.h2_3),
+            nn.Dropout(0.45),
+            nn.Linear(self.h2_3, self.h2_3),
+            nn.ELU(),            
+        )
+        self.head3 = nn.Sequential(
+            nn.BatchNorm1d(self.h3_1),
+            nn.Dropout(0.45),
+            nn.Linear(self.h3_1, self.h3_1),
+            nn.LeakyReLU(),
+            
+            nn.BatchNorm1d(self.h3_1),
+            nn.Linear(self.h3_1, self.h3_1),
+            nn.LeakyReLU(),
+            
+            nn.BatchNorm1d(self.h3_1),
+            nn.Linear(self.h3_1, num_targets),
+        )
+
+    
+    def forward(self, input1, input2):
+        input3 = self.head1(input1)
+        concat = torch.cat((input3, input2), dim=1)
+        input4 = self.head2(concat)
+        avg = torch.div(torch.add(input3, input4), 2)
+        
+        out = self.head3(avg)
+        
+        return out
+        
+
+
+
+
